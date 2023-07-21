@@ -3,7 +3,7 @@
 function getDBConnection() {
     $host = 'localhost';
     $port = '3306';
-    $dbname = 'testdb';
+    $dbname = 'mocktestdb';
     $username = 'root';
     $password = '';
 

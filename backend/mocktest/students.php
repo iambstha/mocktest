@@ -1,10 +1,10 @@
 <?php
-require 'dbConnection.php';
+require './databaseConnection.php';
 
 function fetchDataFromDatabase() {
     try{
         $conn = getDBConnection();
-        $stmt = $conn->query("SELECT * FROM testtable");
+        $stmt = $conn->query("SELECT * FROM students");
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $conn = null;
 
